@@ -1,16 +1,11 @@
-✨ Catálogo Dinâmico de Produtos e CategoriasEste projeto é um Sistema Web Dinâmico desenvolvido para demonstrar o domínio das tecnologias essenciais do desenvolvimento web, incluindo as operações de CRUD (Create, Read, Update, Delete) sobre dados persistidos em um banco de dados MySQL.O tema escolhido é um Catálogo de Produtos e Categorias, com uma interface pública de visualização e um painel administrativo completo.💻 Tecnologias UtilizadasCategoriaTecnologiaUso no ProjetoEstruturaHTML5Criação da estrutura semântica das páginas.EstilizaçãoCSS3Responsividade e design personalizado.InteratividadeJavaScriptValidação de formulários e efeitos dinâmicos.LógicaPHPProcessamento de requisições e regras de negócio.PersistênciaMySQLArmazenamento e gerenciamento dos dados.🔑 Funcionalidades ChaveO sistema está dividido em duas áreas principais: o Front-End Público (Vitrine) e o Painel Administrativo (Gerenciamento).1. Operações CRUD Completas (Painel Admin)OperaçãoDescriçãoArquivos PHP EnvolvidosCreate (C)Cadastro de novos produtos e categorias no banco de dados.produto_cadastro.php, categorias.phpRead (R)Listagem completa de produtos e visualização individual.admin/index.php, index.php (público)Update (U)Edição dos dados de produtos e categorias existentes.produto_cadastro.php, categorias.phpDelete (D)Exclusão permanente de registros do banco de dados.produto_excluir.php2. Requisitos TécnicosValidação de Formulários (JavaScript): Impede o envio de dados inválidos ou incompletos.Design Responsivo (CSS3): O layout se adapta perfeitamente a dispositivos móveis e desktops.Estrutura Semântica (HTML5): Uso correto de tags como <header>, <main>, <footer> para melhor acessibilidade e SEO.Separação Lógica (PHP): Lógica de servidor estritamente separada das interfaces.Conexão Segura: Uso de um arquivo conexao.php dedicado para o acesso ao MySQL.📂 Estrutura do Projeto/
-├── admin/                     // Interface de Gerenciamento
-│   ├── index.php              // Listagem e acesso ao CRUD
-│   ├── produto_cadastro.php   // Formulário C/U de Produto
-│   └── produto_excluir.php    // Lógica D de Produto
-├── includes/                  // Arquivos reutilizáveis
-│   ├── conexao.php            // Configuração da Conexão MySQL
-│   ├── cabecalho.php
-│   └── rodape.php
-├── css/
-│   └── style.css              // Estilização Principal
-├── js/
-│   └── scripts.js             // Funções de Interatividade e Validação
-├── index.php                  // Página Pública Inicial (Vitrine)
-└── detalhes_produto.php       // Visualização de Produto Individual
-⚙️ Como Executar o ProjetoPré-requisitos: Certifique-se de ter um ambiente de servidor local (XAMPP, WAMP, MAMP) com PHP e MySQL instalados.Configuração do Banco:Crie um banco de dados MySQL (ex: catalogo_db).Importe a estrutura das tabelas (produtos e categorias), garantindo o relacionamento de Chave Estrangeira.Configuração do Projeto:Clone este repositório para o diretório htdocs (ou similar) do seu servidor local.Edite o arquivo includes/conexao.php com suas credenciais do MySQL (nome do banco, usuário e senha).Acesso: Acesse o projeto através do seu navegador (ex: http://localhost/nome_da_pasta_do_projeto/). O painel administrativo pode ser acessado em http://localhost/nome_da_pasta_do_projeto/admin/.✒️ AutorEste projeto foi desenvolvido como demonstração de habilidades em desenvolvimento web full-stack.Nome do Desenvolvedor/Grupo - [Link para seu Portfólio/GitHub]
+✨ Catálogo Dinâmico de Produtos e Categorias
+Este projeto é um Sistema Web Dinâmico desenvolvido para demonstrar o domínio das tecnologias essenciais do desenvolvimento web, incluindo as operações de CRUD (Create, Read, Update, Delete) sobre dados persistidos em um banco de dados MySQL.
+
+O tema escolhido é um Catálogo de Produtos e Categorias, oferecendo uma interface pública de visualização e um robusto painel administrativo.
+
+Categoria,Tecnologia,💡 Uso no Projeto
+Estrutura,HTML5,Criação da estrutura semântica das páginas.
+Estilização,CSS3,Layout responsivo e design personalizado.
+Interatividade,JavaScript,"Validação de formulários e efeitos dinâmicos (modais, mensagens)."
+Lógica,PHP,Processamento das requisições e regras de negócio no servidor.
+Persistência,MySQL,Armazenamento e gerenciamento dos dados via conexao.php.
