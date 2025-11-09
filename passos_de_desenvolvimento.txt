@@ -1,0 +1,17 @@
+/
+├── admin/
+│   ├── index.php             // Página administrativa principal (listagem de produtos)
+│   ├── produto_cadastro.php  // Formulário de Criação (C) e Edição (U) de Produto
+│   ├── produto_excluir.php   // Lógica de Exclusão (D)
+│   ├── categorias.php        // CRUD simplificado para Categorias (tabela auxiliar)
+│   └── css/                  // Arquivos CSS específicos do admin
+├── includes/
+│   ├── conexao.php           // Arquivo obrigatório de conexão com o banco
+│   ├── cabecalho.php         // Trecho de código para o <head> e header (reaproveitável)
+│   └── rodape.php            // Trecho de código para o <footer> (reaproveitável)
+├── css/
+│   └── style.css             // Estilização principal do site
+├── js/
+│   └── scripts.js            // Funções JavaScript (validações, interatividade)
+├── index.php                 // Página principal (Vitrine, Read público)
+└── detalhes_produto.php      // Página de visualização de um único produto
