@@ -1,11 +1,15 @@
-✨ Catálogo Dinâmico de Produtos e Categorias
-Este projeto é um Sistema Web Dinâmico desenvolvido para demonstrar o domínio das tecnologias essenciais do desenvolvimento web, incluindo as operações de CRUD (Create, Read, Update, Delete) sobre dados persistidos em um banco de dados MySQL.
-
-O tema escolhido é um Catálogo de Produtos e Categorias, oferecendo uma interface pública de visualização e um robusto painel administrativo.
-
-Categoria,Tecnologia,💡 Uso no Projeto
-Estrutura,HTML5,Criação da estrutura semântica das páginas.
-Estilização,CSS3,Layout responsivo e design personalizado.
-Interatividade,JavaScript,"Validação de formulários e efeitos dinâmicos (modais, mensagens)."
-Lógica,PHP,Processamento das requisições e regras de negócio no servidor.
-Persistência,MySQL,Armazenamento e gerenciamento dos dados via conexao.php.
+✨ Catálogo Dinâmico de Produtos e CategoriasEste projeto é um Sistema Web Dinâmico desenvolvido para demonstrar o domínio das tecnologias essenciais do desenvolvimento web, incluindo as operações de CRUD (Create, Read, Update, Delete) sobre dados persistidos em um banco de dados MySQL.O tema escolhido é um Catálogo de Produtos e Categorias, oferecendo uma interface pública de visualização e um robusto painel administrativo.💻 Pilha Tecnológica (Tech Stack)CategoriaTecnologia💡 Uso no ProjetoEstruturaHTML5Criação da estrutura semântica das páginas.EstilizaçãoCSS3Layout responsivo e design personalizado.InteratividadeJavaScriptValidação de formulários e efeitos dinâmicos (modais, mensagens).LógicaPHPProcessamento das requisições e regras de negócio no servidor.PersistênciaMySQLArmazenamento e gerenciamento dos dados via conexao.php.🔑 Funcionalidades em DestaqueO sistema possui duas áreas interligadas: a Vitrine (Pública) e o Painel de Gerenciamento (Admin).1. Operações CRUD CompletasAçãoOperaçãoDescrição➕ CriarCreateCadastro de novos produtos e categorias.👀 LerReadListagem completa e visualização individual de detalhes.✍️ AtualizarUpdateEdição dos dados de produtos e categorias existentes.❌ ExcluirDeleteExclusão permanente de registros do banco de dados.2. Requisitos Técnicos ObrigatóriosDesign Responsivo: O layout se adapta a qualquer tamanho de tela (desktop, tablet, mobile).Validação Client-Side: Uso de JavaScript para validar campos antes do envio ao servidor.Estrutura Semântica: Implementação de header, main, footer, etc., conforme padrão HTML5.Separação de Lógica: Código PHP de lógica isolado das interfaces HTML.📂 Estrutura de Diretórios/
+├── admin/                     // 🖥️ Interface de Gerenciamento (CRUD)
+│   ├── index.php              // Listagem principal (Read)
+│   ├── produto_cadastro.php   // Formulário (Create/Update)
+│   └── produto_excluir.php    // Lógica de Exclusão (Delete)
+├── includes/                  // ⚙️ Arquivos de Configuração e Reutilização
+│   ├── conexao.php            // Conexão ao MySQL (Obrigatório)
+│   └── ...                    // Outros trechos (header, footer)
+├── css/
+│   └── style.css              // Estilização Principal (CSS3)
+├── js/
+│   └── scripts.js             // Funções JavaScript
+├── index.php                  // Página Pública Inicial (Vitrine)
+└── detalhes_produto.php       // Visualização de Produto Individual
+🚀 Como Rodar o ProjetoServidor Local: Configure um ambiente local (como XAMPP ou WAMP) com PHP e MySQL.Clonar: Clone este repositório para o diretório de projetos do seu servidor (htdocs ou www).Banco de Dados:Crie o banco de dados (ex: catalogo_db).Crie as tabelas produtos e categorias, garantindo o relacionamento de Chave Estrangeira.Conexão: Edite o arquivo includes/conexao.php com as credenciais do seu banco de dados.Acesso:Público: http://localhost/nome_do_projeto/Administrativo: http://localhost/nome_do_projeto/admin/✒️ AutorEste projeto foi desenvolvido como demonstração de habilidades em desenvolvimento web full-stack.[Seu Nome / Nome do Grupo] - [Link para seu Portfólio ou Perfil do GitHub]Qualquer dúvida sobre a implementação específica do código, estou à disposição!
